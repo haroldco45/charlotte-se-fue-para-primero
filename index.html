@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Charlotte se fue para Primero · Grado 2026</title>
+<meta name="description" content="El recuerdo del grado de Charlotte en el Jardín Infantil Amiguitos del Bajo Cauca. Con amor, de Willian y Daniela.">
+<meta name="theme-color" content="#0b1d5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¡Charlotte se fue para Primero!">
+<meta property="og:description" content="Grado 2026 · Jardín Infantil Amiguitos del Bajo Cauca. Un momento para no olvidar jamás.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="og.jpg">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500&family=Nunito:wght@400;600;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1438b8;--noche:#0b1d5c;--rosa:#ff8fb8;--oro:#ffd36e;--crema:#fff8f1;--tinta:#1b1f3a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--tinta);background:var(--crema);overflow-x:hidden}
+img,video{display:block;max-width:100%}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.05}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* barra */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;transition:.3s}
+.top.solid{background:rgba(11,29,92,.92);backdrop-filter:blur(8px)}
+.top b{color:#fff;font-family:Fraunces,serif;font-size:1.1rem;opacity:0;transition:.3s}
+.top.solid b{opacity:1}
+.btns{display:flex;gap:8px}
+.chip{border:1.5px solid rgba(255,255,255,.7);background:rgba(255,255,255,.12);color:#fff;font:800 .8rem Nunito;padding:8px 14px;border-radius:99px;cursor:pointer;letter-spacing:.04em}
+.chip:hover{background:#fff;color:var(--noche)}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;color:#fff;display:flex;align-items:flex-end}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease}
+.slides img.on{opacity:1;animation:kb 7s linear forwards}
+@keyframes kb{to{transform:scale(1.18) translateY(-2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,29,92,.15) 30%,rgba(11,29,92,.92) 88%)}
+.hero .txt{position:relative;z-index:2;padding:0 22px 9vh;max-width:820px}
+.kicker{font:800 .8rem Nunito;letter-spacing:.25em;text-transform:uppercase;color:var(--oro);margin-bottom:14px;opacity:0;animation:up .9s .3s forwards}
+.hero h1{font-size:clamp(3rem,11vw,7rem);font-weight:800;opacity:0;animation:up 1s .55s forwards}
+.hero h1 em{display:block;font-style:italic;font-weight:500;font-size:.5em;color:var(--rosa)}
+.hero p{font-size:1.15rem;margin-top:16px;max-width:560px;opacity:0;animation:up 1s .9s forwards}
+.down{display:inline-block;margin-top:26px;color:#fff;text-decoration:none;font-weight:800;border-bottom:2px solid var(--oro);padding-bottom:3px;opacity:0;animation:up 1s 1.2s forwards}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.bar{position:absolute;left:0;bottom:0;height:4px;background:var(--oro);z-index:3;animation:bar 5s linear infinite}
+@keyframes bar{from{width:0}to{width:100%}}
+
+/* contador */
+.count{background:var(--noche);color:#fff;text-align:center;padding:44px 20px}
+.count .n{font-family:Fraunces,serif;font-size:clamp(3rem,10vw,5.5rem);color:var(--oro);font-weight:800}
+.count small{display:block;opacity:.85;font-size:1.05rem}
+
+section{padding:80px 0}
+.tag{font:800 .78rem Nunito;letter-spacing:.22em;text-transform:uppercase;color:var(--azul)}
+h2{font-size:clamp(2.1rem,6vw,3.4rem);margin:10px 0 18px;color:var(--noche)}
+.lead{font-size:1.15rem;max-width:640px;line-height:1.6}
+
+/* frases rotando */
+.frases{background:linear-gradient(135deg,var(--azul),#3557e0 60%,#6b4bd8);color:#fff;text-align:center;position:relative;overflow:hidden}
+.frases .q{font-family:Fraunces,serif;font-style:italic;font-size:clamp(1.5rem,4.6vw,2.6rem);line-height:1.3;min-height:6.5em;display:flex;align-items:center;justify-content:center;max-width:860px;margin:0 auto;transition:opacity .7s,transform .7s}
+.frases .q.out{opacity:0;transform:translateY(16px)}
+.frases .who{font-family:Caveat,cursive;font-size:1.8rem;color:var(--oro);margin-top:8px}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:26px}
+.dots i{width:9px;height:9px;border-radius:9px;background:rgba(255,255,255,.35);transition:.3s;cursor:pointer}
+.dots i.on{width:28px;background:var(--oro)}
+
+/* dia */
+.timeline{display:grid;gap:26px;margin-top:40px}
+.step{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center}
+.step:nth-child(even) .ph{order:2}
+.ph{border-radius:26px;overflow:hidden;box-shadow:0 20px 50px -20px rgba(11,29,92,.45);aspect-ratio:4/5}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.step:hover .ph img{transform:scale(1.06)}
+.step .num{font-family:Fraunces,serif;font-size:4rem;color:var(--rosa);font-weight:800;line-height:1}
+.step h3{font-size:1.9rem;margin:6px 0 10px;color:var(--noche)}
+.step p{font-size:1.08rem;line-height:1.65}
+
+/* videos */
+.vids{background:var(--noche);color:#fff}
+.vids h2{color:#fff}.vids .tag{color:var(--oro)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:30px}
+.vcard{background:#13297a;border-radius:24px;overflow:hidden}
+.vcard video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.vcard p{padding:16px 18px;font-weight:600}
+
+/* cartas */
+.cartas{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;margin-top:34px}
+.carta{background:#fff;border-radius:22px;padding:30px 26px;box-shadow:0 14px 40px -22px rgba(11,29,92,.5);position:relative;border-top:6px solid var(--azul)}
+.carta.m{border-color:var(--rosa)}.carta.f{border-color:var(--oro)}
+.carta h3{font-size:1.45rem;margin-bottom:14px;color:var(--noche)}
+.carta p{line-height:1.7;margin-bottom:12px}
+.carta .firma{font-family:Caveat,cursive;font-size:1.7rem;color:var(--azul)}
+.sobre{cursor:pointer}
+.sobre .cuerpo{max-height:0;overflow:hidden;transition:max-height 1s ease}
+.sobre.abierta .cuerpo{max-height:1200px}
+.abrir{margin-top:8px;background:var(--noche);color:#fff;border:0;border-radius:99px;padding:10px 18px;font:800 .85rem Nunito;cursor:pointer}
+
+/* galeria */
+.gal{columns:3 240px;column-gap:14px;margin-top:30px}
+.gal img{width:100%;margin-bottom:14px;border-radius:18px;cursor:zoom-in;transition:transform .4s,box-shadow .4s}
+.gal img:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:0 18px 40px -18px rgba(0,0,0,.5)}
+.lb{position:fixed;inset:0;background:rgba(5,10,35,.95);z-index:99;display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:92vw;border-radius:14px}
+.lb button{position:absolute;background:none;border:0;color:#fff;font:800 1rem Nunito;padding:16px;cursor:pointer;letter-spacing:.1em}
+.lb .c{top:10px;right:10px}.lb .p{left:6px}.lb .nx{right:6px}
+
+/* mensajes */
+.form{display:grid;gap:12px;max-width:620px;margin-top:24px}
+.form input,.form textarea{font:1rem Nunito;padding:14px 16px;border-radius:14px;border:1.5px solid #cfd6f2;background:#fff}
+.form textarea{min-height:110px;resize:vertical}
+.cta{background:var(--azul);color:#fff;border:0;border-radius:99px;padding:15px 24px;font:800 1rem Nunito;cursor:pointer;transition:.2s}
+.cta:hover{background:var(--noche)}
+.cta.alt{background:var(--rosa);color:var(--noche)}
+.muro{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:30px}
+.nota{background:#fff3b8;padding:20px;border-radius:6px;box-shadow:0 8px 18px -10px rgba(0,0,0,.35);transform:rotate(var(--r));font-size:1.02rem;line-height:1.5}
+.nota b{display:block;font-family:Caveat,cursive;font-size:1.5rem;margin-top:8px;color:var(--azul)}
+
+footer{background:var(--noche);color:#cdd5f7;text-align:center;padding:50px 20px;font-size:.95rem}
+footer .big{font-family:Fraunces,serif;font-size:1.6rem;color:#fff;margin-bottom:10px}
+footer a{color:var(--oro)}
+
+.rv{opacity:0;transform:translateY(40px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:720px){.step{grid-template-columns:1fr}.step:nth-child(even) .ph{order:0}section{padding:60px 0}}
+</style>
+</head>
+<body>
+
+<div class="top" id="top">
+  <b>Charlotte · 2026</b>
+  <div class="btns">
+    <button class="chip" id="lang">EN</button>
+    <button class="chip" id="share" data-es="Compartir" data-en="Share">Compartir</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="slides" id="slides">
+    <img src="foto-05.jpg" alt="" class="on">
+    <img src="foto-02.jpg" alt="">
+    <img src="foto-07.jpg" alt="">
+    <img src="foto-11.jpg" alt="">
+    <img src="foto-04.jpg" alt="">
+    <img src="foto-10.jpg" alt="">
+  </div>
+  <div class="txt">
+    <div class="kicker" data-es="Jardín Infantil Amiguitos del Bajo Cauca · Grado 2026" data-en="Amiguitos del Bajo Cauca Kindergarten · Class of 2026">Jardín Infantil Amiguitos del Bajo Cauca · Grado 2026</div>
+    <h1>Charlotte <em data-es="¡se fue para Primero!" data-en="is off to First Grade!">¡se fue para Primero!</em></h1>
+    <p data-es="Hoy cerró su primera etapa con una sonrisa que llenó el salón. Este es el recuerdo de ese día, para que no se olvide jamás." data-en="Today she closed her first chapter with a smile that filled the whole room. This is the memory of that day, so it is never forgotten.">Hoy cerró su primera etapa con una sonrisa que llenó el salón. Este es el recuerdo de ese día, para que no se olvide jamás.</p>
+    <a href="#frases" class="down" data-es="Revivir el momento" data-en="Relive the moment">Revivir el momento</a>
+  </div>
+  <div class="bar"></div>
+</header>
+
+<div class="count">
+  <div class="n" id="dias">0</div>
+  <small id="diasTxt" data-es="días desde que Charlotte se graduó del jardín · 24 de noviembre de 2026" data-en="days since Charlotte graduated from kindergarten · November 24, 2026">días desde que Charlotte se graduó del jardín · 24 de noviembre de 2026</small>
+</div>
+
+<section class="frases" id="frases">
+  <div class="wrap">
+    <div class="tag" style="color:var(--oro)" data-es="Palabras del corazón" data-en="Words from the heart">Palabras del corazón</div>
+    <div class="q" id="q"></div>
+    <div class="who" id="who"></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="tag rv" data-es="Así fue el día" data-en="How the day went">Así fue el día</div>
+    <h2 class="rv" data-es="Un día pequeño en el calendario, gigante en el corazón" data-en="A small day on the calendar, a giant one in our hearts">Un día pequeño en el calendario, gigante en el corazón</h2>
+    <div class="timeline">
+      <div class="step rv"><div class="ph"><img src="foto-01.jpg" alt="Charlotte con su tutú rosado" loading="lazy"></div>
+        <div><div class="num">01</div><h3 data-es="Llegó brillando" data-en="She arrived shining">Llegó brillando</h3>
+        <p data-es="Con su tutú rosado, su camiseta de graduada y sus gafitas de monstruo verde, Charlotte entró al salón lista para despedirse del jardín como lo que es: una niña llena de luz." data-en="In her pink tutu, her graduate T-shirt and her little green monster glasses, Charlotte walked in ready to say goodbye to kindergarten as who she is: a girl full of light.">Con su tutú rosado, su camiseta de graduada y sus gafitas de monstruo verde, Charlotte entró al salón lista para despedirse del jardín como lo que es: una niña llena de luz.</p></div></div>
+      <div class="step rv"><div class="ph"><img src="foto-02.jpg" alt="Charlotte bailando" loading="lazy"></div>
+        <div><div class="num">02</div><h3 data-es="Bailó con sus amiguitos" data-en="She danced with her friends">Bailó con sus amiguitos</h3>
+        <p data-es="Junto a Santino, Mateo y todos sus compañeros bailó sin miedo, con esa risa que contagia. Ahí entendimos que ya no es tan chiquita: ya sabe brillar sola." data-en="Next to Santino, Mateo and all her classmates she danced fearlessly, with that contagious laugh. That's when we understood she isn't so little anymore: she already knows how to shine on her own.">Junto a Santino, Mateo y todos sus compañeros bailó sin miedo, con esa risa que contagia. Ahí entendimos que ya no es tan chiquita: ya sabe brillar sola.</p></div></div>
+      <div class="step rv"><div class="ph"><img src="foto-06.jpg" alt="Los graduandos con toga" loading="lazy"></div>
+        <div><div class="num">03</div><h3 data-es="Toga azul, corazón gigante" data-en="Blue gown, giant heart">Toga azul, corazón gigante</h3>
+        <p data-es="Con su toga y su birrete, en fila con sus compañeros, esperó su nombre con las manitas juntas. Pocas cosas tan tiernas como una niña tan pequeña haciendo algo tan grande." data-en="In her gown and cap, lined up with her classmates, she waited for her name with her little hands together. Few things are as tender as such a small girl doing something so big.">Con su toga y su birrete, en fila con sus compañeros, esperó su nombre con las manitas juntas. Pocas cosas tan tiernas como una niña tan pequeña haciendo algo tan grande.</p></div></div>
+      <div class="step rv"><div class="ph"><img src="foto-05.jpg" alt="Charlotte con su diploma" loading="lazy"></div>
+        <div><div class="num">04</div><h3 data-es="Su primer diploma" data-en="Her first diploma">Su primer diploma</h3>
+        <p data-es="Lo sostuvo como un tesoro, sonriendo de oreja a oreja. Es el primero de muchos, pero ninguno va a pesar tanto en el corazón como este." data-en="She held it like a treasure, smiling from ear to ear. It is the first of many, but none will weigh as much in our hearts as this one.">Lo sostuvo como un tesoro, sonriendo de oreja a oreja. Es el primero de muchos, pero ninguno va a pesar tanto en el corazón como este.</p></div></div>
+      <div class="step rv"><div class="ph"><img src="foto-11.jpg" alt="Papá besando a Charlotte" loading="lazy"></div>
+        <div><div class="num">05</div><h3 data-es="El beso de papá" data-en="Daddy's kiss">El beso de papá</h3>
+        <p data-es="Y al final, lo más importante: el abrazo y el beso de papá. Porque detrás de cada pasito de Charlotte están Willian y Daniela, aplaudiendo más fuerte que nadie." data-en="And at the end, the most important part: Daddy's hug and kiss. Because behind every little step Charlotte takes are Willian and Daniela, clapping louder than anyone.">Y al final, lo más importante: el abrazo y el beso de papá. Porque detrás de cada pasito de Charlotte están Willian y Daniela, aplaudiendo más fuerte que nadie.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="vids">
+  <div class="wrap">
+    <div class="tag rv" data-es="En movimiento" data-en="In motion">En movimiento</div>
+    <h2 class="rv" data-es="Para volver a verla una y otra vez" data-en="To watch her again and again">Para volver a verla una y otra vez</h2>
+    <div class="vgrid">
+      <div class="vcard rv"><video src="baile.mp4" poster="poster-baile.jpg" controls playsinline preload="none"></video>
+        <p data-es="El baile de la graduación" data-en="The graduation dance">El baile de la graduación</p></div>
+      <div class="vcard rv"><video src="momento.mp4" poster="poster-momento.jpg" controls playsinline preload="none"></video>
+        <p data-es="Un instante que vale para siempre" data-en="A moment that lasts forever">Un instante que vale para siempre</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="tag rv" data-es="Cartas para Charlotte" data-en="Letters for Charlotte">Cartas para Charlotte</div>
+    <h2 class="rv" data-es="Lo que el corazón quiere decirle" data-en="What our hearts want to tell her">Lo que el corazón quiere decirle</h2>
+    <div class="cartas">
+      <div class="carta rv">
+        <h3 data-es="De papá" data-en="From Daddy">De papá</h3>
+        <p data-es="Mi princesa: hoy te vi con tu toga y sentí que el tiempo corría demasiado rápido. Ayer te cargaba en mis brazos y hoy caminas sola hacia Primero, con la frente en alto." data-en="My princess: today I saw you in your gown and felt that time was running too fast. Yesterday I carried you in my arms, and today you walk on your own into First Grade, head held high.">Mi princesa: hoy te vi con tu toga y sentí que el tiempo corría demasiado rápido. Ayer te cargaba en mis brazos y hoy caminas sola hacia Primero, con la frente en alto.</p>
+        <p data-es="Quiero que sepas que no importa cuántos diplomas recibas en la vida: para mí ya eres lo más grande que he logrado. Siempre voy a estar ahí, en primera fila, aplaudiéndote." data-en="I want you to know that no matter how many diplomas you receive in life, to me you are already the greatest thing I have ever achieved. I will always be there, front row, cheering for you.">Quiero que sepas que no importa cuántos diplomas recibas en la vida: para mí ya eres lo más grande que he logrado. Siempre voy a estar ahí, en primera fila, aplaudiéndote.</p>
+        <div class="firma">Willian</div>
+      </div>
+      <div class="carta m rv">
+        <h3 data-es="De mamá" data-en="From Mommy">De mamá</h3>
+        <p data-es="Mi niña hermosa: cada mañana que te preparé para el jardín, cada lonchera, cada peinado, cada beso en la puerta, me trajo hasta este día. Y valió la pena cada segundo." data-en="My beautiful girl: every morning I got you ready for kindergarten, every lunchbox, every hairdo, every kiss at the door brought me to this day. And every second was worth it.">Mi niña hermosa: cada mañana que te preparé para el jardín, cada lonchera, cada peinado, cada beso en la puerta, me trajo hasta este día. Y valió la pena cada segundo.</p>
+        <p data-es="Nunca pierdas esa sonrisa ni esa ternura. Aprende, juega, pregunta todo y sueña en grande. Mamá te ama hoy, mañana y siempre." data-en="Never lose that smile or that tenderness. Learn, play, ask about everything and dream big. Mommy loves you today, tomorrow and always.">Nunca pierdas esa sonrisa ni esa ternura. Aprende, juega, pregunta todo y sueña en grande. Mamá te ama hoy, mañana y siempre.</p>
+        <div class="firma">Daniela</div>
+      </div>
+      <div class="carta f sobre rv" id="sobre">
+        <h3 data-es="Para la Charlotte del futuro" data-en="For the Charlotte of the future">Para la Charlotte del futuro</h3>
+        <p data-es="Una carta para leer el día que te gradúes del colegio." data-en="A letter to read the day you graduate from high school.">Una carta para leer el día que te gradúes del colegio.</p>
+        <div class="cuerpo">
+          <p data-es="Querida Charlotte grande: si estás leyendo esto, es porque otra vez llevas toga. Hace muchos años, en el Jardín Infantil Amiguitos, eras una niña chiquita con un tutú rosado y una sonrisa con dientes de leche." data-en="Dear grown-up Charlotte: if you are reading this, it's because you are wearing a gown again. Many years ago, at Amiguitos Kindergarten, you were a little girl with a pink tutu and a smile full of baby teeth.">Querida Charlotte grande: si estás leyendo esto, es porque otra vez llevas toga. Hace muchos años, en el Jardín Infantil Amiguitos, eras una niña chiquita con un tutú rosado y una sonrisa con dientes de leche.</p>
+          <p data-es="Ese día tus papás lloraron de alegría. Hoy seguramente también. Nunca olvides de dónde vienes, a quién perteneces y cuánto te aman. Todo empezó con un pasito hacia Primero." data-en="That day your parents cried with joy. Today they surely will too. Never forget where you come from, who you belong to, and how much you are loved. It all started with one little step toward First Grade.">Ese día tus papás lloraron de alegría. Hoy seguramente también. Nunca olvides de dónde vienes, a quién perteneces y cuánto te aman. Todo empezó con un pasito hacia Primero.</p>
+          <div class="firma" data-es="Papá y mamá" data-en="Daddy and Mommy">Papá y mamá</div>
+        </div>
+        <button class="abrir" id="abrir" data-es="Abrir la carta" data-en="Open the letter">Abrir la carta</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#eef1fc">
+  <div class="wrap">
+    <div class="tag rv" data-es="Galería" data-en="Gallery">Galería</div>
+    <h2 class="rv" data-es="Cada foto, un latido" data-en="Every photo, a heartbeat">Cada foto, un latido</h2>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="tag rv" data-es="Muro de cariño" data-en="Wall of love">Muro de cariño</div>
+    <h2 class="rv" data-es="Déjale un mensaje a Charlotte" data-en="Leave Charlotte a message">Déjale un mensaje a Charlotte</h2>
+    <p class="lead rv" data-es="Abuelos, tíos, padrinos y amigos: escriban unas palabras para ella. Queda guardado aquí y lo pueden enviar a la familia por WhatsApp." data-en="Grandparents, aunts, uncles, godparents and friends: write a few words for her. It stays saved here and you can send it to the family on WhatsApp.">Abuelos, tíos, padrinos y amigos: escriban unas palabras para ella. Queda guardado aquí y lo pueden enviar a la familia por WhatsApp.</p>
+    <form class="form rv" id="form">
+      <input id="nom" required maxlength="40" data-ph-es="Tu nombre" data-ph-en="Your name" placeholder="Tu nombre">
+      <textarea id="msg" required maxlength="400" data-ph-es="Tu mensaje para Charlotte..." data-ph-en="Your message for Charlotte..." placeholder="Tu mensaje para Charlotte..."></textarea>
+      <button class="cta" data-es="Dejar mi mensaje" data-en="Leave my message">Dejar mi mensaje</button>
+    </form>
+    <div class="muro" id="muro"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="big" data-es="Vuela alto, Charlotte. Primero te espera." data-en="Fly high, Charlotte. First Grade awaits.">Vuela alto, Charlotte. Primero te espera.</div>
+  <p data-es="Con amor para Willian, Daniela y su princesa · Caucasia, noviembre de 2026" data-en="With love for Willian, Daniela and their princess · Caucasia, November 2026">Con amor para Willian, Daniela y su princesa · Caucasia, noviembre de 2026</p>
+  <p style="margin-top:14px" data-es="Hecho con cariño por <a href='https://vibraspositivashm.com'>Vibras Positivas HM</a>" data-en="Made with love by <a href='https://vibraspositivashm.com'>Vibras Positivas HM</a>">Hecho con cariño por <a href="https://vibraspositivashm.com">Vibras Positivas HM</a></p>
+</footer>
+
+<div class="lb" id="lb">
+  <button class="c" id="lbc" data-es="CERRAR" data-en="CLOSE">CERRAR</button>
+  <button class="p" id="lbp">&lsaquo;</button>
+  <img id="lbi" alt="">
+  <button class="nx" id="lbn">&rsaquo;</button>
+</div>
+
+<script>
+let L = localStorage.getItem('ch-lang') || 'es';
+const FR = {
+ es:[
+  ["Hoy no se graduó solo una niña: se graduaron también las mañanas de madrugar, las loncheras y los besos en la puerta del jardín.","Papá y mamá"],
+  ["Eras tan pequeñita cuando te dejamos el primer día... y hoy sales caminando hacia Primero como toda una grande.","Willian y Daniela"],
+  ["Tu sonrisa de hoy es el diploma más bonito que hemos recibido en la vida.","Mamá"],
+  ["Que nunca te falte la curiosidad, que nunca te falten los amigos y que nunca te falte este abrazo.","Papá"],
+  ["Crecer es inevitable, pero tú, Charlotte, siempre vas a ser nuestra niña.","Tu familia"],
+  ["El mundo es tuyo, princesa. Y nosotros siempre vamos a estar en primera fila.","Willian y Daniela"]
+ ],
+ en:[
+  ["Today it wasn't just a little girl who graduated: so did the early mornings, the lunchboxes and the kisses at the kindergarten door.","Daddy and Mommy"],
+  ["You were so tiny the first day we left you... and today you walk into First Grade like a big girl.","Willian and Daniela"],
+  ["Your smile today is the most beautiful diploma we have ever received.","Mommy"],
+  ["May you never lack curiosity, never lack friends, and never lack this hug.","Daddy"],
+  ["Growing up is inevitable, but you, Charlotte, will always be our little girl.","Your family"],
+  ["The world is yours, princess. And we will always be in the front row.","Willian and Daniela"]
+ ]};
+const fotos = Array.from({length:11},(_,i)=>`foto-${String(i+1).padStart(2,'0')}.jpg`);
+
+function setLang(l){
+  L=l; localStorage.setItem('ch-lang',l); document.documentElement.lang=l;
+  document.querySelectorAll('[data-es]').forEach(e=>e.innerHTML=e.dataset[l]);
+  document.querySelectorAll('[data-ph-es]').forEach(e=>e.placeholder=e.dataset['ph'+(l==='es'?'Es':'En')]);
+  document.getElementById('lang').textContent = l==='es'?'EN':'ES';
+  if(document.getElementById('sobre').classList.contains('abierta')) abrirTxt();
+  fi=-1; nextFrase(); if(dias===0)el.textContent=l==='es'?'Hoy':'Today';
+}
+document.getElementById('lang').onclick=()=>setLang(L==='es'?'en':'es');
+
+// slides
+const sl=[...document.querySelectorAll('#slides img')]; let si=0;
+setInterval(()=>{sl[si].classList.remove('on');si=(si+1)%sl.length;sl[si].classList.add('on')},5000);
+
+// barra
+addEventListener('scroll',()=>document.getElementById('top').classList.toggle('solid',scrollY>80));
+
+// contador
+const d0=new Date('2026-11-24T00:00:00-05:00');
+const hoy=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Bogota'}));
+const dias=Math.max(0,Math.floor((hoy-d0)/864e5));
+let k=0;const el=document.getElementById('dias');
+function pintaDias(){if(dias===0){el.textContent=L==='es'?'Hoy':'Today';return}
+  const t=setInterval(()=>{el.textContent=k;if(k>=dias)clearInterval(t);k++},30)}
+pintaDias();
+
+// frases
+let fi=-1; const q=document.getElementById('q'),who=document.getElementById('who'),dots=document.getElementById('dots');
+FR.es.forEach((_,i)=>{const d=document.createElement('i');d.onclick=()=>{fi=i-1;nextFrase()};dots.appendChild(d)});
+function nextFrase(){
+  fi=(fi+1)%FR[L].length; q.classList.add('out');
+  setTimeout(()=>{q.textContent='“'+FR[L][fi][0]+'”';who.textContent='— '+FR[L][fi][1];q.classList.remove('out')},500);
+  [...dots.children].forEach((d,i)=>d.classList.toggle('on',i===fi));
+}
+setInterval(nextFrase,7000);
+
+// carta futuro
+function abrirTxt(){document.getElementById('abrir').textContent=L==='es'?'Cerrar la carta':'Close the letter'}
+document.getElementById('abrir').onclick=e=>{e.stopPropagation();const s=document.getElementById('sobre');s.classList.toggle('abierta');
+  if(s.classList.contains('abierta'))abrirTxt();else document.getElementById('abrir').innerHTML=document.getElementById('abrir').dataset[L]};
+
+// galeria + lightbox
+const gal=document.getElementById('gal'); let li=0;
+fotos.forEach((f,i)=>{const im=new Image();im.src=f;im.loading='lazy';im.alt='Charlotte '+(i+1);im.className='rv';im.onclick=()=>openLb(i);gal.appendChild(im)});
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+function openLb(i){li=(i+fotos.length)%fotos.length;lbi.src=fotos[li];lb.classList.add('on')}
+document.getElementById('lbc').onclick=()=>lb.classList.remove('on');
+document.getElementById('lbp').onclick=()=>openLb(li-1);
+document.getElementById('lbn').onclick=()=>openLb(li+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')openLb(li-1);if(e.key==='ArrowRight')openLb(li+1)});
+
+// muro
+const muro=document.getElementById('muro');
+const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function pinta(){let m=[];try{m=JSON.parse(localStorage.getItem('ch-muro')||'[]')}catch(e){}
+  muro.innerHTML=m.map((x,i)=>`<div class="nota" style="--r:${(i%2?1:-1)*(1+i%3)}deg">${esc(x.m)}<b>${esc(x.n)}</b></div>`).join('')}
+document.getElementById('form').onsubmit=e=>{e.preventDefault();
+  const n=document.getElementById('nom').value.trim(),m=document.getElementById('msg').value.trim();if(!n||!m)return;
+  let a=[];try{a=JSON.parse(localStorage.getItem('ch-muro')||'[]')}catch(e){}
+  a.unshift({n,m});try{localStorage.setItem('ch-muro',JSON.stringify(a))}catch(e){}
+  pinta();e.target.reset();
+  const txt=(L==='es'?'Mensaje para Charlotte por su grado:\n\n':'Message for Charlotte on her graduation:\n\n')+m+'\n— '+n+'\n\n'+location.href;
+  window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');
+};
+pinta();
+
+// compartir
+document.getElementById('share').onclick=async()=>{
+  const d={title:'Charlotte se fue para Primero',text:L==='es'?'¡Charlotte se graduó del jardín y se fue para Primero! Mira el recuerdo:':'Charlotte graduated from kindergarten and is off to First Grade! See the memory:',url:location.href};
+  if(navigator.share){try{await navigator.share(d)}catch(e){}}else window.open('https://wa.me/?text='+encodeURIComponent(d.text+' '+d.url),'_blank');
+};
+
+// aparecer al hacer scroll
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+
+setLang(L);
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>
