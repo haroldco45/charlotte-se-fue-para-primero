@@ -35,7 +35,7 @@ Todos van en la raíz del repositorio:
 
 ## Publicación
 
-Conectar este repositorio a Netlify (sin build, carpeta de publicación: raíz).
+Publicada en Netlify: https://charlotte-se-fue-para-primero.netlify.app/
 
 ---
 
